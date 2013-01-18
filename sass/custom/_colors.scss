@@ -2,21 +2,29 @@
 // To give it a try, uncomment some of the lines below rebuild your blog, and see how it works.
 // If you need a handy color picker try http://hslpicker.com
 
-//$header-bg: #263347;
+$main-bg: #f8f8f8 !default;
+$page-bg: #f8f8f8; //#252525 !default;
+
+$title-color: rgb(34, 34, 34); //#f2f2f2 !default;
+$subtitle-color: rgb(180, 180, 180); //#aaa !default;
+
+$header-bg: $page-bg; //#263347;
 //$subtitle-color: lighten($header-bg, 58);
-//$nav-bg: desaturate(lighten(#8fc17a, 18), 5);
-//$nav-bg-front: image-url('noise.png');
-//$nav-bg-back: linear-gradient(lighten($nav-bg, 8), $nav-bg, darken($nav-bg, 11));
+$nav-bg: $page-bg; //desaturate(lighten(#8fc17a, 18), 5);
+$nav-bg-front: $nav-bg; //image-url('noise.png');
+$nav-bg-back: $nav-bg; //linear-gradient(lighten($nav-bg, 8), $nav-bg, darken($nav-bg, 11));
+$nav-color: rgb(100, 100, 100); //darken($nav-bg, 50) !default;
+$nav-color-hover: darken($nav-color, 25) !default;
 //$sidebar-bg: desaturate(#eceff5, 8);
 //$sidebar-link-color: saturate(#526f9a, 10);
 //$sidebar-link-color-hover: darken(#7ab662, 9);
-//$footer-bg: #ccc !default;
-//$footer-bg-front: image-url('noise.png');
-//$footer-bg-back: linear-gradient(lighten($footer-bg, 8), $footer-bg, darken($footer-bg, 11));
+$footer-bg: $page-bg; //#ccc !default;
+$footer-bg-front: $page-bg; //image-url('noise.png');
+$footer-bg-back: $footer-bg; //linear-gradient(lighten($footer-bg, 8), $footer-bg, darken($footer-bg, 11));
 
 
 /* To use the light Solarized highlighting theme uncomment the following line */
-//$solarized: light;
+$solarized: light;
 
 /* If you want to tweak the Solarized colors you can do that here */
 //$base03:          #002b36; //darkest blue
@@ -25,8 +33,8 @@
 //$base00:          #657b83; //dark gray
 //$base0:           #839496; //medium gray
 //$base1:           #93a1a1; //medium light gray
-//$base2:           #eee8d5; //cream
-//$base3:           #fdf6e3; //white
+$base2:           #ffffff; //cream eee8d5
+$base3:           rgb(248, 248, 248); //white fdf6e3
 //$solar-yellow:    #b58900;
 //$solar-orange:    #cb4b16;
 //$solar-red:       #dc322f;
@@ -41,3 +49,4 @@
 //$pre-bg: $base03;
 //$pre-border: darken($base02, 5);
 //$pre-color: $base1;
+
