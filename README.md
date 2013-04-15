@@ -5,7 +5,7 @@ To install:
 
 ```
 cd octopress
-git clone git@github.com:mirkok/octopress-theme-classic-light.git .themes/classic-light
+git clone git@github.com:mirkokiefer/octopress-theme-classic-light.git .themes/classic-light
 rake install[classic-light]
 ```
 
